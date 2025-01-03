@@ -7,6 +7,7 @@ import About from './pages/About';
 import Header from './components/Header';
 import CreateStocking from './pages/createStocking';
 import PrivateRoute from './components/PrivateRoute.jsx'
+import GraphDashboard from './pages/GraphDashboard.jsx';
 export default function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ export default function App() {
         <Route element={<PrivateRoute/>}>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/create-Stocking" element={<CreateStocking />} />
+        <Route path="/dashboard" element={<GraphDashboard />} />
         </Route>
 
       </Routes>
