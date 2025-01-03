@@ -54,7 +54,7 @@ const CreateStocking = () => {
   const [stockDetails, setStockDetails] = useState(null); // Store the stock data
   const [apiError, setApiError] = useState('');
 
-  const ALPHA_VANTAGE_API_KEY = '1L2Y5VI159WRNRM5'; // Replace with your API key
+  const ALPHA_VANTAGE_API_KEY = import.meta.env.VITE_ALPHA_VANTAGE_API_KEY;
 
   const handleChange = (e) => {
     const { id, value } = e.target;
