@@ -41,6 +41,7 @@ const ChatWithUs = () => {
     chatBodyRef.current.scrollTo({top: chatBodyRef.current.scrollHeight, behavior:"smooth"});
   },[chatHistory]);
   return (
+  <div>
     <div className={`container ${showChatbot ? "show-chatbot" : ''}`}>
       <button onClick={()=> setShowChatbot(prev => !prev)}
       id="chatbot-toggler">
@@ -75,7 +76,7 @@ const ChatWithUs = () => {
         </div>
        </div>
     </div>
-  
+    </div>
   )
 }
 
