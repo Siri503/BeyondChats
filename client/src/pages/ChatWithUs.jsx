@@ -42,6 +42,39 @@ const ChatWithUs = () => {
   },[chatHistory]);
   return (
   <div>
+    <div className="dashboard-container">
+  <aside className="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Analytics</a></li>
+      <li><a href="#">Messages</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </aside>
+
+  <main className="dashboard-content">
+    <header className="dashboard-header">
+      <h2>Welcome, User!</h2>
+      <button className="logout-btn">Logout</button>
+    </header>
+
+    <section className="dashboard-widgets">
+      <div className="widget">
+        <h3>Total Users</h3>
+        <p>1,245</p>
+      </div>
+      <div className="widget">
+        <h3>Active Chats</h3>
+        <p>89</p>
+      </div>
+      <div className="widget">
+        <h3>New Messages</h3>
+        <p>23</p>
+      </div>
+    </section>
+     </main>
+     </div>
     <div className={`container ${showChatbot ? "show-chatbot" : ''}`}>
       <button onClick={()=> setShowChatbot(prev => !prev)}
       id="chatbot-toggler">
