@@ -42,7 +42,7 @@ const handleSubmit=async(e)=>{
   //  setLoading(false);
   //  setError(null);
   dispatch(signInSuccess(data));
-   navigate('/');
+  navigate('/profile'); 
   }
   catch(error){
     // setLoading(false)

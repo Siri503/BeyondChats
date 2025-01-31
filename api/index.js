@@ -3,7 +3,6 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
-import stockRouter from './routes/stock.route.js';
 import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
@@ -22,7 +21,6 @@ app.use(cookieParser())
 
 app.use("/api/user",userRouter);
 app.use("/api/auth",authRouter);
-app.use("/api/stocks",stockRouter);
 
 app.use(express.static(path.join(__dirname,'/client/dist')));
 
